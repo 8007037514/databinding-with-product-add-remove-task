@@ -1,0 +1,18 @@
+
+
+
+
+<div class="container py-5">
+   <button class="btn btn-primary" (click)="onAddproduct($event)" >Add Product</button>
+<button class="btn btn-success ml-2" (click)="onDeleteproduct($event)" [disabled]="this.pNo <= 0" >Remove Product</button>
+
+<div class="card mt-4">
+   
+   <div class="card-body">
+      <p class="jumbotron">
+         {{pStatus}}
+         </p>
+   </div>
+</div>
+</div>
+<!-- <input type="text" class="form-control" (input)="onKeyUp($event)"> -->
